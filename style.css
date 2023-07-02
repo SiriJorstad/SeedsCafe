@@ -360,7 +360,7 @@ footer {
         width: 130px;
     }
 
-    .stor-tekst {
+    .stor-tekst, .stor-tekst a {
         font-size: 28px;
         margin: auto;
     }
@@ -414,4 +414,12 @@ footer {
     .karibien-innhold {
         margin-right: 250px;
     }
+}
+
+@media screen and (max-width:375px) {
+.meny a {font-size: 12px;}
+.liten-tekst {font-size: 14px;}
+    
+    
+
 }
