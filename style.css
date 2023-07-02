@@ -62,12 +62,23 @@ a {
 .video {
     width: 100%;
     height: 237px;
-    object-fit: cover
+    object-fit: cover;
+    display: none;
+}
+.top-gif{
+    background-image: url(Bilder/burgervideo.gif);
+    height: 237px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
 }
 .white-gradient{
     position: absolute;
     right: 0;
-    height: 230px;
+    top: 0;
+    height: 600px;
+    background: radial-gradient(circle at 90% 10%, white 0%, transparent 40%);
+    width: 600px;
 }
 
 .meny {
@@ -230,6 +241,12 @@ footer {
 @media screen and (min-width:500px) {
     .desktop{
         display: block;
+    }
+    .video {
+        display: block;
+    }
+    .top-gif{
+        display: none;
     }
     p,
     a {
