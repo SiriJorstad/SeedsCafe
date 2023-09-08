@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-size: unset;
     background-color: #FFF2E4;
 }
 .desktop{
@@ -66,11 +67,14 @@ a {
     display: none;
 }
 .top-gif{
-    background-image: url(Bilder/burgervideo.gif);
+    background-image: url(Bilder/Seeds.gif);
     height: 237px;
     width: 100%;
     background-size: cover;
     background-position: center;
+}
+.top-gif.burger{
+    background-image: url(Bilder/burgervideo.gif);
 }
 .white-gradient{
     position: absolute;
@@ -239,6 +243,9 @@ footer {
 }
 
 @media screen and (min-width:500px) {
+    html {
+        zoom: 100%;
+    }
     .desktop{
         display: block;
     }
