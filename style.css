@@ -1,449 +1,447 @@
 body {
-    margin: 0;
-    font-size: unset;
-    background-color: #FFF2E4;
+  margin: 0;
+  font-size: unset;
+  background-color: #fff2e4;
 }
-.desktop{
-    display: none;
+.desktop {
+  display: none;
 }
 
 p,
 a {
-    font-family: 'Inter', sans-serif;
-    font-weight: 200;
-    line-height: 1.3;
-    margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  line-height: 1.3;
+  margin: 0;
 }
 
 .stor-tekst {
-    letter-spacing: 0.1em;
-    font-weight: 100;
+  letter-spacing: 0.1em;
+  font-weight: 100;
 }
 
-.medium-tekst, .medium-tekst a {
-    letter-spacing: 0.1em;
-    font-weight: 100;
-    font-size: 20px;
+.medium-tekst,
+.medium-tekst a {
+  letter-spacing: 0.1em;
+  font-weight: 100;
+  font-size: 20px;
 }
 
 .uppercase {
-    text-transform: uppercase;
-    font-weight: 300;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .background-image {
-    width: 100%;
-    height: 160px;
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
 }
 
 .light {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .regular {
-    font-weight: 400;
-    margin-bottom: 0px;
+  font-weight: 400;
+  margin-bottom: 0px;
 }
 
 .logo-group {
-    height: 58px;
-    width: 125px;
+  height: 58px;
+  width: 125px;
+  position: absolute;
+  top: 18px;
+  right: 8px;
+  z-index: 1;
+}
+
+.logo-group img {
+  width: 100%;
+}
+
+.video {
+  width: 100%;
+  height: 237px;
+  object-fit: cover;
+  display: none;
+}
+.top-gif {
+  background-image: url(Bilder/Seeds.gif);
+  height: 237px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.top-gif.burger {
+  background-image: url(Bilder/burgervideo.gif);
+}
+.white-gradient {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 600px;
+  background: radial-gradient(circle at 90% 10%, white 0%, transparent 40%);
+  width: 600px;
+}
+
+.meny {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.meny a {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.innhold {
+  margin: auto;
+  max-width: 1000px;
+}
+
+.bilderforside {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  grid-gap: 10px;
+}
+
+.grid img {
+  width: 100%;
+}
+
+.grid-desktop {
+  grid-template-columns: 1fr;
+}
+
+.strek-knapp {
+  font-size: 22px;
+  width: 50%;
+  display: block;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.karibien {
+  background-image: url(Bilder/karibien.jpg);
+  background-position: -120px -60px;
+  background-size: 690px;
+  min-height: 340px;
+  padding-top: 220px;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.karibien-intro {
+  padding-left: 100px;
+  margin-bottom: 60px;
+}
+
+.karibien-tittel {
+  font-size: 12px;
+}
+
+.karibien-brodtekst {
+  padding: 0 20px;
+}
+
+.logoikon {
+  position: absolute;
+  left: 20px;
+  top: -35px;
+  width: 70px;
+}
+
+.bildeselskap {
+  display: flex;
+}
+
+.selskap {
+  font-size: 14px;
+}
+
+.bolge {
+  height: 3px;
+  width: 28px;
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.kakebilde {
+  height: 160px;
+  width: 160px;
+  margin: auto;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.rettstrek {
+  display: none;
+}
+
+.rettstrek2 {
+  display: none;
+}
+
+.forsidehoyre {
+  text-align: left;
+}
+
+.bestillseeds {
+  font-size: 14px;
+}
+
+.bildeinne {
+  height: 271px;
+  width: 350px;
+  padding-bottom: 10px;
+}
+
+.active {
+  pointer-events: none;
+  font-weight: 400;
+}
+
+.logoer {
+  position: absolute;
+  left: 64%;
+  transform: translateX(-50%);
+  align-items: center;
+  display: flex;
+  bottom: -330px;
+}
+
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 0;
+  border-top: 1px solid rgb(0 0 0 / 20%);
+  padding-top: 20px;
+  align-items: flex-end;
+}
+
+@media screen and (min-width: 500px) {
+  html {
+    zoom: 100%;
+  }
+  .desktop {
+    display: block;
+  }
+  .video {
+    display: block;
+  }
+  .top-gif {
+    display: none;
+  }
+  p,
+  a {
+    font-size: 16px;
+  }
+
+  .meny {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+  }
+
+  .meny a {
+    margin-right: 0px;
+  }
+
+  .grid-desktop {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .strek-knapp {
+    font-size: 28px;
+    width: auto;
+  }
+
+  .video {
+    height: 600px;
+  }
+
+  .logo-group {
+    height: 145px;
+    width: 300px;
     position: absolute;
     top: 18px;
     right: 8px;
     z-index: 1;
-}
+  }
 
-.logo-group img {
-    width: 100%
-}
+  .background-image {
+    height: 300px;
+  }
 
-.video {
-    width: 100%;
-    height: 237px;
-    object-fit: cover;
-    display: none;
-}
-.top-gif{
-    background-image: url(Bilder/Seeds.gif);
-    height: 237px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-}
-.top-gif.burger{
-    background-image: url(Bilder/burgervideo.gif);
-}
-.white-gradient{
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 600px;
-    background: radial-gradient(circle at 90% 10%, white 0%, transparent 40%);
-    width: 600px;
-}
-
-.meny {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: inline-block
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-.meny a {
-    margin-right: 10px;
-    font-size: 14px;
-}
-
-.innhold {
-    margin: auto;
+  .selskap {
+    display: flex;
     max-width: 1000px;
-}
+    margin: auto;
+  }
 
-.bilderforside {
-    display: flex;
-}
+  .selskap > div {
+    width: 33%;
+    padding-right: 60px;
+  }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    grid-gap: 10px;
-}
+  .bolge {
+    display: none;
+  }
 
-.grid img {
-    width: 100%;
-}
+  .kakebilde {
+    height: 250px;
+    width: 250px;
+    margin-left: 0;
+  }
 
-.grid-desktop {
-    grid-template-columns: 1fr;
-}
-
-
-.strek-knapp {
-    font-size: 22px;
-    width: 50%;
-    display: block;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-}
-
-.karibien {
-    background-image: url(Bilder/karibien.jpg);
-    background-position: -120px -60px;
-    background-size: 690px;
-    min-height: 340px;
-    padding-top: 220px;
-    position: relative;
-    padding-bottom: 30px;
-}
-
-.karibien-intro {
-    padding-left: 100px;
-    margin-bottom: 60px;
-}
-
-.karibien-tittel {
+  .kaketekst {
     font-size: 12px;
-}
+  }
 
-.karibien-brodtekst {
-    padding: 0 20px;
-}
-
-.logoikon {
-    position: absolute;
-    left: 20px;
-    top: -35px;
-    width: 70px;
-}
-
-.bildeselskap {
-    display: flex;
-}
-
-.selskap {
-    font-size: 14px;
-}
-
-.bolge {
-    height: 3px;
-    width: 28px;
+  .drikke {
+    max-width: 270px;
     margin: auto;
-    display: block;
     margin-top: 50px;
-    margin-bottom: 50px;
-}
+  }
 
-.kakebilde {
-    height: 160px;
-    width: 160px;
-    margin: auto;
+  .rettstrek {
+    width: 34px;
+    border-top: 1px solid #000000;
     display: block;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+    margin: auto;
+    margin-top: 70px;
+  }
 
-.rettstrek {
-    display: none;
-}
+  .rettstrek2 {
+    width: 50px;
+    border-top: 1px solid #000000;
+    display: block;
+    margin: auto;
+    margin-top: 70px;
+    margin-left: -45px;
+  }
 
-.rettstrek2 {
-    display: none;
-}
+  .karibien {
+    background-size: 1440px;
+    background-position: center -240px;
+    width: 100%;
+    height: 440px;
+    padding-top: 170px;
+  }
 
-.forsidehoyre {
-    text-align: left;
-}
-
-.bestillseeds {
+  .karibien-tittel {
     font-size: 14px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 80px;
+  }
 
-}
+  .karibien-innhold {
+    max-width: 430px;
+    margin: auto;
+    margin-right: 70px;
+  }
 
-.bildeinne {
-    height: 271px;
-    width: 350px;
-    padding-bottom: 10px;
-}
+  .karibien-intro {
+    padding: 0;
+    margin-bottom: 0;
+  }
 
-.active {
-    pointer-events: none;
-    font-weight: 400;
-}
+  .karibien-brodtekst {
+    padding: 0;
+  }
 
-.logoer {
-    position: absolute;
-    left: 64%;
-    transform: translateX(-50%);
-    align-items: center;
-    display: flex;
-    bottom: -330px;
-}
+  .logoikon {
+    top: -65px;
+    width: 130px;
+  }
 
-footer {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-top: 0;
-    border-top: 1px solid rgb(0 0 0 / 20%);
-    padding-top: 20px;
-    align-items: flex-end;
-}
+  .stor-tekst,
+  .stor-tekst a {
+    font-size: 28px;
+    margin: auto;
+  }
 
-@media screen and (min-width:500px) {
-    html {
-        zoom: 100%;
-    }
-    .desktop{
-        display: block;
-    }
-    .video {
-        display: block;
-    }
-    .top-gif{
-        display: none;
-    }
-    p,
-    a {
+  .medium-tekst {
+    font-size: 20px;
+    margin: auto;
+  }
 
-        font-size: 16px;
-    }
+  .forsidehoyre {
+    text-align: right;
+  }
 
-    .meny {
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        max-width: 800px;
-    }
+  .bestillseeds {
+    font-size: 28px;
+    width: 500px;
+    height: 350px;
+    margin-left: 30px;
+    display: inline;
+  }
 
-    .meny a {
-        margin-right: 0px;
-    }
+  .bestillseeds p {
+    margin: 0;
+  }
 
-    .grid-desktop {
-        grid-template-columns: 1fr 1fr;
-    }
-    .grid-4{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
+  .bildeogtekst {
+    display: inline-flex;
+    margin-left: 14%;
+    margin-bottom: 200px;
+    margin-top: 20px;
+  }
 
-    .strek-knapp {
-        font-size: 28px;
-        width: auto;
-    }
-
-    .video {
-        height: 600px;
-    }
-
-    .logo-group {
-        height: 145px;
-        width: 300px;
-        position: absolute;
-        top: 18px;
-        right: 8px;
-        z-index: 1
-    }
-
-    .background-image {
-        height: 300px;
-    }
-
-    .selskap {
-        display: flex;
-        max-width: 1000px;
-        margin: auto;
-    }
-
-    .selskap>div {
-        width: 33%;
-        padding-right: 60px;
-    }
-
-    .bolge {
-        display: none;
-    }
-
-    .kakebilde {
-        height: 250px;
-        width: 250px;
-        margin-left: 0;
-    }
-
-    .kaketekst {
-        font-size: 12px;
-    }
-
-    .drikke {
-        max-width: 270px;
-        margin: auto;
-        margin-top: 50px;
-    }
-
-    .rettstrek {
-        width: 34px;
-        border-top: 1px solid #000000;
-        display: block;
-        margin: auto;
-        margin-top: 70px;
-    }
-
-    .rettstrek2 {
-        width: 50px;
-        border-top: 1px solid #000000;
-        display: block;
-        margin: auto;
-        margin-top: 70px;
-        margin-left: -45px;
-    }
-
-    .karibien {
-        background-size: 1440px;
-        background-position: center -240px;
-        width: 100%;
-        height: 440px;
-        padding-top: 170px;
-    }
-
-    .karibien-tittel {
-        font-size: 14px;
-        text-align: center;
-        font-weight: 300;
-        margin-bottom: 80px;
-    }
-
-    .karibien-innhold {
-        max-width: 430px;
-        margin: auto;
-        margin-right: 70px;
-    }
-
-    .karibien-intro {
-        padding: 0;
-        margin-bottom: 0;
-    }
-
-    .karibien-brodtekst {
-        padding: 0;
-    }
-
-    .logoikon {
-        top: -65px;
-        width: 130px;
-    }
-
-    .stor-tekst, .stor-tekst a {
-        font-size: 28px;
-        margin: auto;
-    }
-
-    .medium-tekst {
-        font-size: 20px;
-        margin: auto;
-    }
-
-    .forsidehoyre {
-        text-align: right;
-    }
-
-    .bestillseeds {
-        font-size: 28px;
-        width: 500px;
-        height: 350px;
-        margin-left: 30px;
-        display: inline;
-    }
-
-    .bestillseeds p {
-        margin: 0;
-    }
-
-    .bildeogtekst {
-        display: inline-flex;
-        margin-left: 14%;
-        margin-bottom: 200px;
-        margin-top: 20px;
-    }
-
-    .bildeinne {
-        height: 360px;
-        width: auto;
-    }
+  .bildeinne {
+    height: 360px;
+    width: auto;
+  }
 }
 
 .logoer {
-    position: absolute;
-    left: 64%;
-    transform: translateX(-50%);
-    align-items: center;
-    display: flex;
-    bottom: -330px;
+  position: absolute;
+  left: 64%;
+  transform: translateX(-50%);
+  align-items: center;
+  display: flex;
+  bottom: -330px;
 }
 
-
-
-@media screen and (min-width:1300px) {
-    .karibien-innhold {
-        margin-right: 250px;
-    }
+@media screen and (min-width: 1300px) {
+  .karibien-innhold {
+    margin-right: 250px;
+  }
 }
 
-@media screen and (max-width:375px) {
-.meny a {font-size: 12px;}
-.liten-tekst {font-size: 14px;}
-    
-    
-
+@media screen and (max-width: 375px) {
+  .meny a {
+    font-size: 12px;
+  }
+  .liten-tekst {
+    font-size: 14px;
+  }
 }
